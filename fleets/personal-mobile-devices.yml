@@ -118,5 +118,4 @@ labels:
 software:
   packages:
     - path: ../platforms.windows/software/cloudflare-warp.yml
-      self_service: false
-  
+      self_service: false 
