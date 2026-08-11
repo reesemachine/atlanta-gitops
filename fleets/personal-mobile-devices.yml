@@ -119,3 +119,6 @@ software:
   packages:
     - path: ../platforms.windows/software/cloudflare-warp.yml
       self_service: false 
+  fleet_maintained_apps:
+    - slug: 1password/darwin
+      self_service: true
