@@ -65,6 +65,12 @@ controls:
   #     - "x86-based Windows hosts"
   # ```  
   ###########################################################
+  settings:
+    webhook_settings:
+      failing_policies_webhook:
+        enable_failing_policies_webhook: true
+        destination_url: https://webhook.site/2098a166-9dcd-48f9-b8ed-a3f62c2be507
+        host_batch_size: 0
   apple_settings:
     configuration_profiles:
       - path: ../platforms/macos/declaration-profiles/*.json
