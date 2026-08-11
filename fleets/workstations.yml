@@ -74,6 +74,20 @@ controls:
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
+  macos_updates:
+    deadline: "2026-07-30"
+    minimum_version: "26.4"
+controls:
+  scripts:
+    - paths: ../platforms/windows/scripts/*.ps1
+controls:
+    enable_disk_encryption: true
+    enable_recovery_lock_password: true
+controls:
+  ipados_updates:
+    deadline: "2026-07-30"
+    minimum_version: "26.2"
+    
 
   ###########################################################
   # Managed disk encryption
