@@ -22,6 +22,26 @@ org_settings:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
     org_name: GitOpsAtlanta
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/2098a166-9dcd-48f9-b8ed-a3f62c2be507
+    ###########################################################
+    # Webhooks are used to send real-time notifications to
+    # external services when certain events occur in Fleet.
+    #
+    # Read more:
+    #   • https://fleetdm.com/docs/configuration/yaml-files#webhook-settings
+    ###########################################################
+    webhooks:
+      - name: "Slack Notifications"
+        url: $SLACK_WEBHOOK_URL
+        events:
+          - "host_added"
+          - "host_removed"
+          - "policy_failure"
+          - "policy_success"
+          - "query_result"
 
   server_settings:
     ###########################################################
