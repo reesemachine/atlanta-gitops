@@ -115,4 +115,8 @@ labels:
     description: Hosts beloinging C-Suite
     label_membership_type: manual
     hosts:
+software:
+  packages:
+    - path: ../platforms.windows/software/cloudflare-warp.yml
+      self_service: false
   
